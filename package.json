@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Server.js"
+    "dev": "cross-env NODE_ENV=development nodemon Server.js --time --node-args=\"-r dotenv-flow/config -r esm\"",
+    "start": "cross-env NODE_ENV=production nodemon Server.js --time --node-args=\"-r dotenv-flow/config -r esm\""
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "joi": "^17.6.0",
