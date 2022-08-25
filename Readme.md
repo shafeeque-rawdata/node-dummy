@@ -17,7 +17,6 @@ jwt authentication,
 joi validation
 
 <!-- Environment variables -->
-
 PORT=
 <!-- dev db -->
 MONGO_URL=
